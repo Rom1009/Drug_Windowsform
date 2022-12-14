@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <img width="400px" src="https://api.logo.com/api/v2/images?format=webp&logo=logo_2b6dee2e-e7c4-4e34-a5e8-57a9652f79db&width=1000&background=transparent&fit=contain&u=1670910220" alt="Alternate Text" />
+    <p style="padding-top: 40px" class="lead">Website providing services to buy functional food products.</p>
+    <p><a href="#" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Functional foods</h2>
+        <p>
+            Display list of product and you are able to buy it.
+        </p>
+        <p class="btn btn-default">@Html.ActionLink("Learn more>>", "Index", "Products") </p>
+    </div>
+    <div class="col-md-4">
+        <h2>About</h2>
+        <p>Description my company.</p>
+        <p class="btn btn-default">@Html.ActionLink("Learn more>>","About","Home") </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Contact</h2>
+        <p>Communication methods.</p>
+        <p class="btn btn-default">@Html.ActionLink("Learn more>>", "Contact", "Home") </p>
+
+    </div>
+</div>
